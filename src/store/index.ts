@@ -2,7 +2,6 @@ import {createStore} from 'vuex'
 import {Itab} from "./type";
 
 interface State {
-    count:number,
     tabsList:Array<Itab>
 }
 
