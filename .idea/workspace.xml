@@ -2,52 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4319a7b-7421-4e21-bab3-41e3a4243936" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auto-imports.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DefineEmits.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DefineExpose.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DefineProps.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SetupScript.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SlotsAttrs.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/components/AppMain/AppMain.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/components/HeaderBar/BreadCrumb.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/components/HeaderBar/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/components/LogoBar/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/components/MenuBar/MenuItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/components/MenuBar/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/components/TabBar/TabBar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/isMobile.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/goods/Category.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/goods/Goods.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/index/Index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/login/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/orders/OrderAction.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/orders/OrderQuery.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/storesLocation/StoresLocation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/system/Account.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/system/Group.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/system/Setting.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/system/Task.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/user/User.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/components/TabBar/TabBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/components/TabBar/TabBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -56,6 +29,14 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2RHN0OQp7JsHeTn14io1kR8dmLD" />
   <component name="ProjectViewState">
@@ -68,6 +49,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -81,6 +63,7 @@
       <workItem from="1686902825159" duration="966000" />
       <workItem from="1686904726855" duration="187000" />
       <workItem from="1686907614827" duration="67000" />
+      <workItem from="1687234559482" duration="4481000" />
     </task>
     <servers />
   </component>
