@@ -19,6 +19,10 @@ export const store = createStore<State> ({
             if(!isSome){
                 state.tabsList.push(tab)
             }
+        },
+        closeCurrentTab(state:State,targetName:string){
+            const index = state.tabsList.findIndex((item)=>item.path==targetName)
+            state.tabsList.splice(index,1)
         }
     },
     // getters，用于派生 state 中的属性，类似于计算属性。
