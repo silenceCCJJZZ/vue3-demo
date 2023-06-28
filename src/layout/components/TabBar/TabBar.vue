@@ -17,10 +17,10 @@
     </el-tab-pane>
   </el-tabs>
   <ul v-show="contextMenuVisible" :style="{left:left+'px',top:top + 'px'}" class="contextmenu">
-    <li>关闭所有</li>
-    <li>关闭左边</li>
-    <li>关闭右边</li>
-    <li>关闭其他</li>
+    <li @click="closeAllTabs">关闭所有</li>
+    <li @click="closeOtherTabs('left')">关闭左边</li>
+    <li @click="closeOtherTabs('right')">关闭右边</li>
+    <li @click="closeOtherTabs('other')">关闭其他</li>
   </ul>
 
 </template>
@@ -106,6 +106,7 @@ onMounted(()=>{
   refresh()
 
 })
+
 const contextMenuVisible:Ref<boolean>= ref(false);
 const left = ref('')
 const top = ref('')
@@ -114,14 +115,36 @@ const openContextMenu=(event:any)=>{
   console.log(event)
   if(event.srcElement.id){
     let currentContextTabId = event.srcElement.id.split('-')[1];
+    //右键后，保存路由path到store中
+    store.commit("saveCurContextTabId",currentContextTabId);
     contextMenuVisible.value = true
     left.value = event.clientX;
     top.value = event.clientY+10;
 
   }
-
+}
+//关闭所有
+const closeAllTabs=()=>{
+  store.commit("closeAllTabs");
+  contextMenuVisible.value = false
+  router.push("/index")
 }
 
+//关闭其他（包括关闭左、右、其他）
+const closeOtherTabs=(par:string)=>{
+  store.commit("closeOtherTabs",par)
+  contextMenuVisible.value = false
+}
+
+// 监控右键删除列表，如果点击，tab消失
+watch(()=>contextMenuVisible.value,()=>{
+  if (contextMenuVisible.value){
+      window.addEventListener("click",()=>contextMenuVisible.value=false)
+  }else{
+    //移除监听
+    window.addEventListener("click",()=>contextMenuVisible.value=false)
+  }
+})
 
 </script>
 <style lang="scss">
