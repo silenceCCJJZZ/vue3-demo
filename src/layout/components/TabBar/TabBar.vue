@@ -52,11 +52,29 @@ const addTab=()=>{
     store.commit("addTab",tab)
 }
 
+//加入缓存存储tab
+const refresh=()=>{
+  window.addEventListener("beforeunload", ()=>{
+    sessionStorage.setItem('TABS_ROUTES',JSON.stringify(tabsList.value))
+  })
+
+  let session = sessionStorage.getItem('TABS_ROUTES')
+  if(session){
+    let tabItem = JSON.parse(session)
+    tabItem.forEach((tab:Itab)=>{
+      store.commit("addTab",tab)
+    })
+  }
+}
+
+//修复刷新后位置会改变，先刷新再addTab
+refresh()
+
 //监控
 watch(()=>route.path,()=>{
     activeKey.value = route.path
     addTab()
-})
+},{immediate:true})//立即执行，修复刷新后，没有选中tab标签
 
 //点击tab
 const clickHandle=(event:any)=>{
@@ -82,30 +100,6 @@ const removeTab=(targetName:string)=>{
     store.commit("closeCurrentTab",targetName)
 
 }
-//TODO 刷新后位置会改变
-
-//加入缓存存储tab
-const refresh=()=>{
-    window.addEventListener("beforeunload", ()=>{
-      sessionStorage.setItem('TABS_ROUTES',JSON.stringify(tabsList.value))
-    })
-
-    let session = sessionStorage.getItem('TABS_ROUTES')
-    if(session){
-      let tabItem = JSON.parse(session)
-      tabItem.forEach((tab:Itab)=>{
-        store.commit("addTab",tab)
-      })
-    }
-}
-
-//页面初始化
-onMounted(()=>{
-  //初始化页面生成tab
-  addTab()
-  refresh()
-
-})
 
 const contextMenuVisible:Ref<boolean>= ref(false);
 const left = ref('')
